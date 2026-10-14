@@ -1,0 +1,22 @@
+.visually-hidden:not(:focus):not(:active),
+input[type='radio'].visually-hidden,
+input[type='checkbox'].visually-hidden,
+input[type='file'].visually-hidden {
+  @include visually-hidden;
+}
+
+.indent-reset {
+  @include indent-reset;
+}
+
+.list-reset {
+  @include list-reset;
+}
+
+.list-type-reset {
+  list-style-type: none;
+}
+
+.btn-reset {
+  @include btn-reset;
+}

@@ -1,0 +1,42 @@
+.product-descr {
+  &__list-tabs {
+    @include list-reset;
+
+    display: flex;
+    align-items: center;
+    column-gap: 1px;
+
+    &>li {
+      flex-grow: 1;
+    }
+  }
+
+  &__btn {
+    @include btn-reset;
+
+    width: 100%;
+    padding: 24px;
+    color: #fbfbfb;
+    background-color: #444444;
+    transition: var(--duration-fast) ease-in-out;
+    transition-property: opacity;
+
+    &.is-selected {
+      pointer-events: none;
+    }
+
+    &:not(.is-selected) {
+      opacity: 0.7;
+    }
+  }
+
+  &__panels {
+    color: #444444;
+    background-color: #fefcef;
+    padding: 24px;
+
+    & * {
+      font-weight: 400;
+    }
+  }
+}

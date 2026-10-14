@@ -1,0 +1,25 @@
+.product-meta {
+  overflow: hidden;
+
+  &__cat {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 24px;
+  }
+
+  &__cat-badge {
+    margin: 0;
+    padding: 12px;
+    color: #444444;
+    background-color: #f6f7f8;
+    border: solid 1px #f0f0f0;
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 32px;
+  }
+  &__variables {
+    margin-bottom: 32px;
+  }
+}

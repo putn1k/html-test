@@ -1,0 +1,25 @@
+<div class="product-gallery">
+  <div class="product-gallery__main slider" id="product-gallery-main">
+    <div class="swiper-wrapper slider__wrapper">
+      <a class="swiper-slide product-gallery__photo" href="assets/img/mock1.jpg">
+        <img src="assets/img/mock1.jpg" alt="">
+      </a>
+      <a class="swiper-slide product-gallery__photo" href="assets/img/mock2.jpg">
+        <img src="assets/img/mock2.jpg" alt="">
+      </a>
+    </div>
+    <div class="product-gallery__controls">
+      @include('slider-control.html')
+    </div>
+  </div>
+  <div class="slider" id="product-gallery-thumbs" thumbsSlider>
+    <div class="swiper-wrapper slider__wrapper">
+      <div class="swiper-slide product-gallery__thumb">
+        <img src="assets/img/mock1.jpg" alt="">
+      </div>
+      <div class="swiper-slide product-gallery__thumb">
+        <img src="assets/img/mock2.jpg" alt="">
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,32 @@
+.product-gallery {
+  &__main {
+    border-radius: 16px;
+    margin-bottom: 8px;
+  }
+
+  &__photo {
+    & img {
+      display: block;
+      width: 100%;
+      aspect-ratio: 1/1;
+    }
+  }
+
+  &__thumb {
+    & img {
+      display: block;
+      aspect-ratio: 1/1;
+      border-radius: 12px;
+    }
+  }
+
+  &__controls {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    transform: translateY(-50%);
+    z-index: 1;
+    pointer-events: none;
+  }
+}

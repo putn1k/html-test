@@ -1,0 +1,26 @@
+.product {
+  padding-top: 64px;
+  padding-bottom: 32px;
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 30px;
+  }
+
+  &__gallery {
+    grid-column: 1 / span 5;
+  }
+  &__meta {
+    grid-column: 6 / span 7;
+  }
+
+  @include media-max($lg) {
+    &__gallery {
+      grid-column: 1 / span 12;
+    }
+    &__meta {
+      grid-column: 1 / span 12;
+    }
+  }
+}
